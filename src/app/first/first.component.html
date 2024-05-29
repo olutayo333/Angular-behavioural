@@ -1,0 +1,13 @@
+<div class="row">
+    <h1> Product List </h1>
+    <div class="col-lg-6 mx-auto">
+        <div class="card shadow mb-2 p-2" *ngFor="let item of generalArray" (click)="sendItemsDetails(item)">
+            <p> <img class="w-25" src={{item.img}} alt=""> </p>
+            <p>{{item.text}}</p>
+
+        </div>
+    </div>
+    <div class="col-lg-5 shadow mx-auto">
+        <app-second/>
+    </div>
+</div>
